@@ -10,17 +10,14 @@
  * @return {ListNode}
  */
 var deleteMiddle = function(head) {
+    if (!head || !head.next) return null;
+    
     let current = head
     let count = 0
     
     while(current){
         current = current.next
         count++
-    }
-
-    if(count == 1){
-        head = null
-        return head
     }
 
     if(count <= 2 && head.next){
