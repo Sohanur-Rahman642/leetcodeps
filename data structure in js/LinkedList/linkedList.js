@@ -39,7 +39,7 @@ class LinkedList {
     size() {
         let current = this.head
         let count = 0
-        while (current.next) {
+        while (current) {
             current = current.next
             count++
         }
@@ -161,5 +161,6 @@ ll.addAt(600, 4)
 ll.removeTop()
 ll.removeLast()
 ll.removeAt(2)
+console.log("size of linked list -> ", ll.size())
 ll.printList()
 
