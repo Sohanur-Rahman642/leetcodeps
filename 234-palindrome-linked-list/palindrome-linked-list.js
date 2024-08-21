@@ -10,6 +10,8 @@
  * @return {boolean}
  */
 var isPalindrome = function(head) {
+    if(!head) return false 
+    
     let current = head 
     let string1 = ""
     let string2 = ""
